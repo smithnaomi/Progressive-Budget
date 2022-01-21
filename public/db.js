@@ -17,6 +17,7 @@ request.onupgradeneeded = function (e) {
     db.createObjectStore("TransactionStore", { autoIncrement: true });
   }
 };
+
 request.onerror = function (e) {
   console.log(`Woops! ${e.target.errorCode}`);
 };
@@ -55,3 +56,25 @@ function checkDatabase() {
     }
   };
 }
+
+request.onsuccess = function (e) {
+  console.log("success");
+  db = e.target.result;
+
+  if (navigator.onLine) {
+    console.log("Backend online! 🗄️");
+    checkDatabase();
+  }
+};
+
+const saveRecord = (record) => {
+  console.log("Save record invoked");
+  // Create a transaction on the BudgetStore db with readwrite access
+  const transaction = db.transaction(["TransactionStore"], "readwrite");
+
+  const store = transaction.objectStore("TransactionStore");
+
+  store.add(record);
+};
+
+window.addEventListener("online", checkDatabase);
