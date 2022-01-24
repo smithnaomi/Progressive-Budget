@@ -9,37 +9,35 @@ _Naomi Smith_
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 - [License](#license)
 
 ## Overview
 
-<p>Zombies reversus ab inferno, nam malum cerebro. De carne animata corpora quaeritis. Summus sit​​, morbo vel maleficia? De Apocalypsi undead dictum mauris. Hi mortuis soulless creaturas, imo monstra adventus vultus comedat cerebella viventium. Qui offenderit rapto, terribilem incessu. The voodoo sacerdos suscitat mortuos comedere carnem. Search for solum oculi eorum defunctis cerebro. Nescio an Undead zombies. Sicut malus movie horror.<p>
+<p>Money makes the world go round, don't let being offline slow you down. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online. <p>
 
 ## Build
 
-<!-- - [React](https://reactjs.org/docs/getting-started.html) -->
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Node](https://nodejs.org/en/about/)
+- [Heroku](https://www.heroku.com/what)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Installation
 
-To install necessary dependencies, please run the following command:
-' ' '
-run accurate packages
-' ' '
+To install the application you will need nodeJS and use npm install to get all the related packages for this project. In the terminal type npm start to interact with the application on your localhost.
 
 ## Usage
 
+![Progressive Budget](public/images/budget.png)
+
+### Live Webpage
+
 [Progressive Budget](https://murmuring-atoll-81991.herokuapp.com/)
-
-## Tests
-
-To test, please run the following command;
-' ' '
 
 ## Contributing
 
-Please reach out via provided Github
+Please reach out via provided Github or Email
 
 ## Questions
 
